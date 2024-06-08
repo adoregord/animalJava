@@ -19,7 +19,6 @@ public class Animal{
         System.out.println("Animals have to eat");
     }
 
-
     //getter-setter//
     public int getLegs() {
         return legs;
@@ -27,4 +26,5 @@ public class Animal{
     public void setLegs(int legs) {
         this.legs = legs;
     }
+
 }

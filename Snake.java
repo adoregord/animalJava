@@ -1,8 +1,10 @@
 public class Snake extends Animal implements Pet {
     private String name;
+    private final int legs;
 
     public Snake(int legs){
         super(legs);
+        this.legs = legs;
     }
 
     //override the methods from pet interface
@@ -21,5 +23,9 @@ public class Snake extends Animal implements Pet {
         System.out.printf("%s likes to sleep\n", name);
     }
 
+    @Override
+    public String toString(){
+        return getClass().getSimpleName() + "{name='" + name+ " and has " +  legs +" legs}\n";
+    }
 }
 

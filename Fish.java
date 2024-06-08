@@ -1,8 +1,10 @@
 public class Fish extends Animal implements Pet{
     private String name;
+    private final int legs;
 
     public Fish(int legs){
         super(legs);
+        this.legs = legs;
     }
 
     //override the original methods from pet interface and animal class
@@ -31,4 +33,8 @@ public class Fish extends Animal implements Pet{
         System.out.println(name + " likes to eat bloodworms");
     }
 
+    @Override
+    public String toString(){
+        return getClass().getSimpleName() + "{name='" + name+ " and has " +  legs +" legs}\n";
+    }
 }
