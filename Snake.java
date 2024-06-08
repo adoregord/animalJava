@@ -5,6 +5,7 @@ public class Snake extends Animal implements Pet {
         super(legs);
     }
 
+    //override the methods from pet interface
     @Override
     public void setName(String name){
         this.name = name;

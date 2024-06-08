@@ -37,5 +37,14 @@ public class ListAnimal {
         snake.walk();
         snake.eat();
         snake.play();
+        System.out.println("");
+
+        //....Untuk obj user Didi dengan pet kucing....//
+        Didin didi = new Didin("Didin keren", 22);
+        System.out.printf("The name of this user is %s\n", didi.getName());
+        didi.addPets(cat.getName());
+        didi.addPets(snake.getName());
+        didi.addPets(cat.getName());
+        System.out.printf("Didi has %d number of pets, there are %s", didi.numberOfPets(), didi.allOfPets());
     }
 }
